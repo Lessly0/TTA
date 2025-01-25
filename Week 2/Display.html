@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Displays </title>
+        <style>
+            input{
+                display: block;
+                margin: 5px;
+            }
+            a{
+                display: block;
+                text-decoration: none;
+            }
+            li{
+                display: inline;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+
+            }
+            .container div{
+                border: 2px dashed red;
+                margin: 5px;
+            }
+            .none-block-elements{
+                display: none;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="none-block-elements">
+                <form action= "/submit" method="post"> 
+                    <label> Names: </label>
+                    <input type="text" names="names" placeholder="Please enter names" required>                  
+                    
+                    <label> Email: </label>
+                    <input type="email" required>
+
+                    <a href="#" target="_blank">Link 1</a> 
+                    <a href="#" target="_blank">Link 2</a>                 
+                </form>
+            </div>
+            <div class="block-elements">
+                <h2>Unordered List</h2>
+                <ul>
+                   <li>Item 1 </li>
+                   <li>Item 2 </li>
+                   <li>Item 3 </li>
+                 </ul>
+            </div>
+
+        </div>
+
+    </body>
+</html>
